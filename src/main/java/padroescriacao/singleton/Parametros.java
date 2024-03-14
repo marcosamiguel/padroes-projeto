@@ -6,9 +6,15 @@ public class Parametros {
     }
 
     ;
-    private static Parametros instance = new Parametros();
+    private static Parametros instance;
 
     public static Parametros getInstance() {
+        if (instance == null){
+            instance = new Parametros();
+            getInstance().nomeEscola = "Uniacademia";
+            getInstance().usuarioLogado = "MM";
+        }
+
         return instance;
     }
 
@@ -19,15 +25,15 @@ public class Parametros {
         return nomeEscola;
     }
 
-    public void setNomeEscola(String nomeEscola) {
-        this.nomeEscola = nomeEscola;
-    }
-
     public String getUsuarioLogado() {
         return usuarioLogado;
     }
 
-    public void setUsuarioLogado(String usuarioLogado) {
-        this.usuarioLogado = usuarioLogado;
+
+    @Override
+    public String toString() {
+        return getNomeEscola() + " - " +
+                getUsuarioLogado() + " hash: " +
+                super.toString();
     }
 }

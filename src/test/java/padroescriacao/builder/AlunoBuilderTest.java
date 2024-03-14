@@ -41,6 +41,7 @@ class AlunoBuilderTest {
                 .setMatricula(1)
                 .setNome("Aluno 1")
                 .setEmail("aluno1@email.com")
+                .setCelular("8978888222223")
                 .build();
 
         assertNotNull(aluno);

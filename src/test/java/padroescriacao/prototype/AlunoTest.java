@@ -3,6 +3,7 @@ package padroescriacao.prototype;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class AlunoTest {
 
@@ -15,7 +16,9 @@ class AlunoTest {
         alunoClone.setNome("Aluno Clonado");
         alunoClone.getEndereco().setNumero(2);
 
-        assertEquals("Aluno{matricula=123, nome='Aluno Original', endereco=Endereco{logradouro='Rua A', numero=1}, localNascimento='Juiz de Fora'}", aluno.toString());
-        assertEquals("Aluno{matricula=456, nome='Aluno Clonado', endereco=Endereco{logradouro='Rua A', numero=2}, localNascimento='Juiz de Fora'}", alunoClone.toString());
+        assertEquals(aluno.getLocalNascimento(), alunoClone.getLocalNascimento());
+
+        assertNotEquals(aluno.toString(), alunoClone.toString());
+        assertNotEquals(aluno.getEndereco().toString(), alunoClone.getEndereco().toString());
     }
 }

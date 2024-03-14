@@ -54,11 +54,14 @@ public class Aluno implements Cloneable {
 
     @Override
     public String toString() {
-        return "Aluno{" +
+
+
+        return super.toString() + "Aluno{" +
                 "matricula=" + matricula +
                 ", nome='" + nome + '\'' +
                 ", endereco=" + endereco +
                 ", localNascimento='" + localNascimento + '\'' +
                 '}';
     }
+
 }
