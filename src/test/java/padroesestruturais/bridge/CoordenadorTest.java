@@ -8,33 +8,33 @@ class CoordenadorTest {
 
     @Test
     void deveRetornarSalarioCoordenadorComEnsinoMedio() {
-        Escolaridade escolaridade = new EnsinoMedio();
+        IEscolaridade IEscolaridade = new EnsinoMedio();
         Coordenador coordenador = new Coordenador(2000.0f);
-        coordenador.setEscolaridade(escolaridade);
+        coordenador.setEscolaridade(IEscolaridade);
         assertEquals(2000.0f, coordenador.calcularSalario(), 0.01f);
     }
 
     @Test
     void deveRetornarSalarioCoordenadorComGraduacao() {
-        Escolaridade escolaridade = new Graduacao();
+        IEscolaridade IEscolaridade = new Graduacao();
         Coordenador coordenador = new Coordenador(2000.0f);
-        coordenador.setEscolaridade(escolaridade);
+        coordenador.setEscolaridade(IEscolaridade);
         assertEquals(2200.0f, coordenador.calcularSalario(), 0.01f);
     }
 
     @Test
     void deveRetornarSalarioCoordenadorComMestrado() {
-        Escolaridade escolaridade = new Mestrado();
+        IEscolaridade IEscolaridade = new Mestrado();
         Coordenador coordenador = new Coordenador(2000.0f);
-        coordenador.setEscolaridade(escolaridade);
+        coordenador.setEscolaridade(IEscolaridade);
         assertEquals(2400.0f, coordenador.calcularSalario(), 0.01f);
     }
 
     @Test
     void deveRetornarSalarioCoordenadorComDoutorado() {
-        Escolaridade escolaridade = new Doutorado();
+        IEscolaridade IEscolaridade = new Doutorado();
         Coordenador coordenador = new Coordenador(2000.0f);
-        coordenador.setEscolaridade(escolaridade);
+        coordenador.setEscolaridade(IEscolaridade);
         assertEquals(2600.0f, coordenador.calcularSalario(), 0.01f);
     }
 

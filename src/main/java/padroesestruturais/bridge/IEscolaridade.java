@@ -1,6 +1,6 @@
 package padroesestruturais.bridge;
 
-public interface Escolaridade {
+public interface IEscolaridade {
 
     float percentualAumento();
 }

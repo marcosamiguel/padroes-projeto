@@ -2,7 +2,7 @@ package padroesestruturais.bridge;
 
 public abstract class Cargo {
 
-    protected Escolaridade escolaridade;
+    protected IEscolaridade escolaridade;
 
     protected float salarioBase;
 
@@ -10,7 +10,7 @@ public abstract class Cargo {
         this.salarioBase = salarioBase;
     }
 
-    public void setEscolaridade(Escolaridade escolaridade) {
+    public void setEscolaridade(IEscolaridade escolaridade) {
         this.escolaridade = escolaridade;
     }
 
