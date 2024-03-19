@@ -10,8 +10,8 @@ public abstract class Cargo {
         this.salarioBase = salarioBase;
     }
 
-    public void setEscolaridade(IEscolaridade escolaridade) {
-        this.escolaridade = escolaridade;
+    public void setEscolaridade(IEscolaridade IEscolaridade) {
+        this.escolaridade = IEscolaridade;
     }
 
     public void setSalarioBase(float salarioBase) {

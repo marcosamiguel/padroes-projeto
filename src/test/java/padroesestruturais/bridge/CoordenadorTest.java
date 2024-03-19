@@ -24,17 +24,17 @@ class CoordenadorTest {
 
     @Test
     void deveRetornarSalarioCoordenadorComMestrado() {
-        IEscolaridade IEscolaridade = new Mestrado();
+        IEscolaridade escolaridade = new Mestrado();
         Coordenador coordenador = new Coordenador(2000.0f);
-        coordenador.setEscolaridade(IEscolaridade);
+        coordenador.setEscolaridade(escolaridade);
         assertEquals(2400.0f, coordenador.calcularSalario(), 0.01f);
     }
 
     @Test
     void deveRetornarSalarioCoordenadorComDoutorado() {
-        IEscolaridade IEscolaridade = new Doutorado();
+        IEscolaridade escolaridade = new Doutorado();
         Coordenador coordenador = new Coordenador(2000.0f);
-        coordenador.setEscolaridade(IEscolaridade);
+        coordenador.setEscolaridade(escolaridade);
         assertEquals(2600.0f, coordenador.calcularSalario(), 0.01f);
     }
 
