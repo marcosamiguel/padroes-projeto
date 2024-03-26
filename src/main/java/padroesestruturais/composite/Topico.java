@@ -17,6 +17,7 @@ public class Topico extends Conteudo {
         this.cargaHoraria = cargaHoraria;
     }
 
+
     public String getConteudo() {
         return "Tópico: " + this.getDescricao() + " - carga horária: " + this.cargaHoraria + "\n";
     }

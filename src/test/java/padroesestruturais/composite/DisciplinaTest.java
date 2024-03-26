@@ -21,13 +21,13 @@ class DisciplinaTest {
         unidade3.addConteudo(topico31);
         unidade3.addConteudo(topico32);
 
-        Unidade ementa = new Unidade("Padrões de Projeto");
-        ementa.addConteudo(unidade1);
-        ementa.addConteudo(unidade2);
-        ementa.addConteudo(unidade3);
+        Unidade root = new Unidade("Padrões de Projeto");
+        root.addConteudo(unidade1);
+        root.addConteudo(unidade2);
+        root.addConteudo(unidade3);
 
         Disciplina disciplina = new Disciplina();
-        disciplina.setEmenta(ementa);
+        disciplina.setEmenta(root);
 
         assertEquals("Unidade: Padrões de Projeto\n" +
                 "Unidade: Padrões de Criacao\n" +

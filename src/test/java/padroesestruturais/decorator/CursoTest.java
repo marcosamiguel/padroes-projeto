@@ -114,7 +114,10 @@ class CursoTest {
 
     @Test
     void deveRetornarEstruturaCursoComEstagioMaisAtividadesComplementaresMaisTrabalhoConclusaoCurso() {
-        Curso curso = new Estagio(new AtividadesComplementares(new TrabalhoConclusaoCurso(new CursoGraduacao())));
+        Curso curso = new Estagio(
+                new AtividadesComplementares(
+                        new TrabalhoConclusaoCurso(
+                                new CursoGraduacao())));
         assertEquals("Graduação/TCC/ACC/Estágio", curso.getEstrutura());
     }
 

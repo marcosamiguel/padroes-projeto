@@ -20,7 +20,8 @@ public abstract class CursoDecorator implements Curso {
     public abstract float getPercentualCargaHoraria();
 
     public float getCargaHoraria() {
-        return this.curso.getCargaHoraria() * (1 + (this.getPercentualCargaHoraria() / 100));
+        return this.curso.getCargaHoraria() * (1 +
+                (this.getPercentualCargaHoraria() / 100));
     }
 
     public abstract String getNomeEstrutura();

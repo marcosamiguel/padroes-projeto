@@ -15,6 +15,10 @@ public class Directory extends FileSystemItem{
         children.add(item);
     }
 
+    public void remove(FileSystemItem item){
+        children.remove(item);
+    }
+
     @Override
     public void print(String indentation) {
         System.out.println(indentation + "Directory: " + name);
