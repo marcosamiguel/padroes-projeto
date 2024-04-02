@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Escola {
 
-    private List<Aluno> alunos = new ArrayList<>();
+        private List<Aluno> alunos = new ArrayList<>();
 
     public void matricular(String nomeAluno, String nomeCidade, String uf) {
-        Cidade cidade = CidadeFactory.getCidade(nomeCidade, uf);
+        Cidade cidade = FlyweightCidadeFactory.getCidade(nomeCidade, uf);
         Aluno aluno = new Aluno(nomeAluno, cidade);
         alunos.add(aluno);
     }

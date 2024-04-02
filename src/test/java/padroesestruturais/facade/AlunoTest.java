@@ -18,6 +18,8 @@ class AlunoTest {
     void deveRetornarPendenciaSecretariaFormatura() {
         Aluno aluno = new Aluno();
         Secretaria.getInstancia().addAlunoPendente(aluno);
+        Biblioteca.getInstancia().addAlunoPendente(aluno);
+        Financeiro.getInstancia().addAlunoPendente(aluno);
 
         assertEquals(false, aluno.formar());
     }

@@ -2,7 +2,7 @@ package padroesestruturais.facade;
 
 public class Secretaria extends Setor {
 
-    private static Secretaria secretaria = new Secretaria();
+    private static Secretaria secretaria;
 
     private Secretaria() {
     }
@@ -10,6 +10,9 @@ public class Secretaria extends Setor {
     ;
 
     public static Secretaria getInstancia() {
+        if (secretaria == null){
+            secretaria = new Secretaria();
+        }
         return secretaria;
     }
 

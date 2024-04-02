@@ -5,8 +5,6 @@ import padroesestruturais.decorator.exemplo2.AcucarDecorator;
 import padroesestruturais.decorator.exemplo2.Cafe;
 import padroesestruturais.decorator.exemplo2.CafeSimples;
 import padroesestruturais.decorator.exemplo2.CremeDecorator;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class CafeTest {

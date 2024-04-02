@@ -34,7 +34,7 @@ class EscolaTest {
         escola.matricular("Ana", "Juiz de Fora", "MG");
         escola.matricular("Joao", "Santos Dumont", "MG");
 
-        assertEquals(2, CidadeFactory.getTotalCidades());
+        assertEquals(2, FlyweightCidadeFactory.getTotalCidades());
     }
 
 }

@@ -3,7 +3,7 @@ package padroesestruturais.flyweight;
 public class Aluno {
 
     private String nome;
-    private Cidade cidadeResidencia;
+        private Cidade cidadeResidencia;
 
     public Aluno(String nome, Cidade cidadeResidencia) {
         this.nome = nome;

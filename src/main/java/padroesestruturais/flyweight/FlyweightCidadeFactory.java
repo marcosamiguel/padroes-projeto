@@ -3,7 +3,7 @@ package padroesestruturais.flyweight;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CidadeFactory {
+public class FlyweightCidadeFactory {
     private static Map<String, Cidade> cidades = new HashMap<>();
 
     public static Cidade getCidade(String nome, String uf) {
@@ -15,7 +15,7 @@ public class CidadeFactory {
         return cidade;
     }
 
-    public static int getTotalCidades() {
+        public static int getTotalCidades() {
         return cidades.size();
     }
 
