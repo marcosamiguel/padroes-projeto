@@ -13,6 +13,7 @@ public class Aluno {
     public String obterAluno() {
         return "Aluno{" +
                 "nome='" + this.nome + '\'' +
+            //    " hash: " + cidadeResidencia.toString() +
                 ", cidade='" + cidadeResidencia.getNome() + '\'' +
                 ", uf='" + cidadeResidencia.getUf() + '\'' +
                 '}';

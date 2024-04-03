@@ -29,12 +29,12 @@ class EscolaTest {
     @Test
     void deveRetornarTotalCidades() {
         Escola escola = new Escola();
-        escola.matricular("Jose", "Juiz de Fora", "MG");
+        escola.matricular("Jose", "Juiz de Fora-1", "MG");
         escola.matricular("Maria", "Juiz de Fora", "MG");
         escola.matricular("Ana", "Juiz de Fora", "MG");
         escola.matricular("Joao", "Santos Dumont", "MG");
 
-        assertEquals(2, FlyweightCidadeFactory.getTotalCidades());
+        assertEquals(3, FlyweightCidadeFactory.getTotalCidades());
     }
 
 }
