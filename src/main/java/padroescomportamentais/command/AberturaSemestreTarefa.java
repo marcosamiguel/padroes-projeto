@@ -10,9 +10,17 @@ public class AberturaSemestreTarefa implements Tarefa {
 
     public void executar() {
         this.semestre.abrirSemestre();
+        log();
     }
 
     public void cancelar() {
         this.semestre.fecharSemestre();
+        log();
+    }
+
+
+    @Override
+    public void log() {
+        System.out.print("\nLog do arquivo " + semestre.getSituacao());
     }
 }
