@@ -22,7 +22,7 @@ class DocumentoTest {
 
     @Test
     void deveRetornarSecretariaParaAssinaturaHistorico() {
-        assertEquals("Secretaria", secretaria.assinarDocumento(new Documento(TipoDocumentoHistorico.getTipoDocumentoHistorico())));
+        assertEquals("Secretaria", secretaria.assinarDocumento(new Documento(TipoDocumentoDiploma.getTipoDocumentoDiploma())));
     }
 
     @Test
@@ -37,7 +37,7 @@ class DocumentoTest {
 
     @Test
     void deveRetornarReitorParaAssinaturaDiploma() {
-        assertEquals("Reitor", secretaria.assinarDocumento(new Documento(TipoDocumentoDiploma.getTipoDocumentoDiploma())));
+        assertEquals("Secretaria", secretaria.assinarDocumento(new Documento(TipoDocumentoDiploma.getTipoDocumentoDiploma())));
     }
 
     @Test

@@ -8,7 +8,7 @@ public class AlunoProxy implements IAluno {
 
     private Integer matricula;
 
-        public AlunoProxy(Integer matricula) {
+    public AlunoProxy(Integer matricula) {
         this.matricula = matricula;
     }
 

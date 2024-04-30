@@ -13,7 +13,7 @@ class SecretariaTest {
     @BeforeEach
     void setUp() {
         secretaria = new Secretaria();
-        semestre = new Semestre(2021, 1);
+        semestre = new Semestre(2024, 1);
     }
 
     @Test
