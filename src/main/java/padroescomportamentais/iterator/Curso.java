@@ -10,14 +10,21 @@ public class Curso implements Iterable<Aluno> {
     private List<Aluno> alunos = new ArrayList<Aluno>();
 
     public Curso(Aluno... alunos) {
-        this.alunos = Arrays.asList(alunos);
+        this.setAlunos(Arrays.asList(alunos));
     }
 
     @Override
     public Iterator<Aluno> iterator() {
-        return alunos.iterator();
+        return getAlunos().iterator();
     }
 
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
 }
 
 

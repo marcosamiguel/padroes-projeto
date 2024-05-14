@@ -10,9 +10,11 @@ class CensoTest {
     void deveContarAlunosAtivosCurso() {
         Curso curso = new Curso(
                 new Aluno("Marco", true),
-                new Aluno("Antonio", true),
+                new Aluno("MM", true),
                 new Aluno("Jose", false),
-                new Aluno("Maria", true)
+                new Aluno("MM", true),
+                new Aluno("MM1", false)
+
         );
         assertEquals(3, Censo.contarAlunosAtivosCurso(curso));
     }
@@ -21,9 +23,9 @@ class CensoTest {
     void deveContarTotalAlunosCurso() {
         Curso curso = new Curso(
                 new Aluno("Marco", true),
-                new Aluno("Antonio", true),
+                new Aluno("MM", true),
                 new Aluno("Jose", false),
-                new Aluno("Maria", true)
+                new Aluno("MM", true)
         );
         assertEquals(4, Censo.contarTotalAlunosCurso(curso));
     }
