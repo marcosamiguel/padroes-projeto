@@ -10,5 +10,8 @@ public abstract class Usuario {
     }
 
     public abstract void enviar(String mensagem);
+
+    public abstract void enviar(String mensagem, Usuario arroba);
+
     public abstract void receber(String mensagem);
 }

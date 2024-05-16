@@ -9,9 +9,11 @@ class AlunoTest {
     @Test
     void deveElogiarSecretaria() {
         Aluno aluno = new Aluno();
+
         assertEquals("A Ouvidoria agradece seu contato.\nA Secretaria respondeu sua demanda conforme mensagem a seguir.\n" +
                         ">>A Secretaria agradece a mensagem: Ótimo atendimento",
-                aluno.elogiarSecretaria("Ótimo atendimento"));
+                aluno.elogiar("Ótimo atendimento"));
+
     }
 
     @Test
@@ -19,7 +21,7 @@ class AlunoTest {
         Aluno aluno = new Aluno();
         assertEquals("A Ouvidoria agradece seu contato.\nA Secretaria respondeu sua demanda conforme mensagem a seguir.\n" +
                         ">>A Secretaria vai procurar melhorar o serviço da reclamação: Lentidão no atendimento",
-                aluno.reclamarSecretaria("Lentidão no atendimento"));
+                aluno.reclamar("Lentidão no atendimento"));
     }
 
     @Test
@@ -27,7 +29,7 @@ class AlunoTest {
         Aluno aluno = new Aluno();
         assertEquals("A Ouvidoria agradece seu contato.\nA Secretaria respondeu sua demanda conforme mensagem a seguir.\n" +
                         ">>A Secretaria vai analisar a sugestão: Ampliar horário funcionamento",
-                aluno.sugerirSecretaria("Ampliar horário funcionamento"));
+                aluno.sugerir("Ampliar horário funcionamento"));
     }
 
 }

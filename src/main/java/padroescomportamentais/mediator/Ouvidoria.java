@@ -11,19 +11,19 @@ public class Ouvidoria {
         return instancia;
     }
 
-    public String receberElogioSecretaria(String mensagem) {
+    public String receberElogio(String mensagem) {
         return "A Ouvidoria agradece seu contato.\n" +
                 "A Secretaria respondeu sua demanda conforme mensagem a seguir.\n" +
                 ">>" + Secretaria.getInstancia().receberElogio(mensagem);
     }
 
-    public String receberReclamacaoSecretaria(String mensagem) {
+    public String receberReclamacao(String mensagem) {
         return "A Ouvidoria agradece seu contato.\n" +
                 "A Secretaria respondeu sua demanda conforme mensagem a seguir.\n" +
                 ">>" + Secretaria.getInstancia().receberReclamacao(mensagem);
     }
 
-    public String receberSugestaoSecretaria(String mensagem) {
+    public String receberSugestao(String mensagem) {
         return "A Ouvidoria agradece seu contato.\n" +
                 "A Secretaria respondeu sua demanda conforme mensagem a seguir.\n" +
                 ">>" + Secretaria.getInstancia().receberSugestao(mensagem);

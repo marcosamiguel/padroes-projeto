@@ -2,16 +2,16 @@ package padroescomportamentais.mediator;
 
 public class Pessoa {
 
-    public String elogiarSecretaria(String mensagem) {
-        return Ouvidoria.getInstancia().receberElogioSecretaria(mensagem);
+    public String elogiar(String mensagem) {
+        return Ouvidoria.getInstancia().receberElogio(mensagem);
     }
 
-    public String reclamarSecretaria(String mensagem) {
-        return Ouvidoria.getInstancia().receberReclamacaoSecretaria(mensagem);
+    public String reclamar(String mensagem) {
+        return Ouvidoria.getInstancia().receberReclamacao(mensagem);
     }
 
-    public String sugerirSecretaria(String mensagem) {
-        return Ouvidoria.getInstancia().receberSugestaoSecretaria(mensagem);
+    public String sugerir(String mensagem) {
+        return Ouvidoria.getInstancia().receberSugestao(mensagem);
     }
 
 

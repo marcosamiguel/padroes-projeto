@@ -13,6 +13,11 @@ public class UsuarioConcreto extends Usuario {
     }
 
     @Override
+    public void enviar(String mensagem, Usuario arroba) {
+        arroba.enviar(mensagem);
+    }
+
+    @Override
     public void receber(String mensagem) {
         System.out.println(this.nome + " recebeu: " + mensagem);
     }

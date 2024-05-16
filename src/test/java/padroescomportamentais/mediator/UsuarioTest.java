@@ -15,7 +15,7 @@ public class UsuarioTest {
 
         MediadorConcreto mediador = new MediadorConcreto();
 
-        Usuario jj = new UsuarioConcreto(mediador, "JJ");
+        Usuario jj = new UsuarioConcreto(mediador, "Aluno sem mae");
         Usuario  mm = new UsuarioConcreto(mediador, "MM");
         Usuario cc = new UsuarioConcreto(mediador, "CC");
 
@@ -24,7 +24,7 @@ public class UsuarioTest {
         mediador.adicionarUsuario(cc);
 
         jj.enviar("Olá, pessoal!");
-        mm.enviar("Oi, JJ! Como vai?");
+        mm.enviar("Oi, JJ! Como vai?", jj);
         cc.enviar("Bom dia a todos!");
 
         assertNotNull(mediador);
