@@ -1,7 +1,9 @@
 package padroescomportamentais.memento;
 
-public class AlunoEstadoTransferido implements AlunoEstado {
+import java.util.Date;
 
+public class AlunoEstadoTransferido implements AlunoEstado {
+    private Date dataEstado;
     private AlunoEstadoTransferido() {
     }
 
@@ -15,5 +17,13 @@ public class AlunoEstadoTransferido implements AlunoEstado {
     public String getNomeEstado() {
         return "Transferido";
     }
+    @Override
+    public void setData(Date data) {
+        dataEstado = data;
+    }
 
+    @Override
+    public Date getData() {
+        return dataEstado;
+    }
 }

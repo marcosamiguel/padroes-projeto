@@ -11,8 +11,9 @@ class AlunoTest {
     void deveArmazenarEstados() {
         Aluno aluno = new Aluno();
         aluno.setEstado(AlunoEstadoMatriculado.getInstance());
+        aluno.setEstado(AlunoEstadoJubilado.getInstance());
         aluno.setEstado(AlunoEstadoFormado.getInstance());
-        assertEquals(2, aluno.getEstados().size());
+        assertEquals(3, aluno.getEstados().size());
     }
 
     @Test
