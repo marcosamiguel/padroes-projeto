@@ -11,7 +11,9 @@ public class EstacaoMeterologicaTest {
     void testar() {
         EstacaoMeteorologica estacao = new EstacaoMeteorologica();
         DisplayTemperatura display1 = new DisplayTemperatura();
+        display1.setNome("Monitor da casa da MS");
         DisplayTemperatura display2 = new DisplayTemperatura();
+        display2.setNome("Monitor da casa do MM");
 
         estacao.adicionarObservador(display1);
         estacao.adicionarObservador(display2);

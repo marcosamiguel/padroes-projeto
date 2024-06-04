@@ -42,9 +42,9 @@ class AlunoTest {
         Aluno aluno1 = new Aluno("Aluno 1");
         Aluno aluno2 = new Aluno("Aluno 2");
         aluno1.matricular(turmaA);
-        aluno2.matricular(turmaB);
+        //aluno2.matricular(turmaB);
         turmaA.lancarNotas();
-        //turmaB.lancarNotas();
+        turmaB.lancarNotas();
         //assertEquals("Aluno 1, nota lançada na Turma{ano=2021, semestre=1, nomeDisciplina='Algoritmos', nomeTurma='A'}", aluno1.getUltimaNotificacao());
         assertNull(aluno2.getUltimaNotificacao());
     }
