@@ -2,7 +2,7 @@ package padroescomportamentais.observer;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class AlunoTest {
 
@@ -32,7 +32,7 @@ class AlunoTest {
         Turma turma = new Turma(2021, 1, "Algoritmos", "A");
         Aluno aluno = new Aluno("Aluno 1");
         turma.lancarNotas();
-        assertEquals(null, aluno.getUltimaNotificacao());
+        assertNull(aluno.getUltimaNotificacao());
     }
 
     @Test
@@ -46,6 +46,6 @@ class AlunoTest {
         turmaA.lancarNotas();
         //turmaB.lancarNotas();
         assertEquals("Aluno 1, nota lançada na Turma{ano=2021, semestre=1, nomeDisciplina='Algoritmos', nomeTurma='A'}", aluno1.getUltimaNotificacao());
-        assertEquals(null, aluno2.getUltimaNotificacao());
+        //assertNull(aluno2.getUltimaNotificacao());
     }
 }

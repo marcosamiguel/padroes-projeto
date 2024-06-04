@@ -3,8 +3,6 @@ package padroescomportamentais.observer;
 import org.junit.jupiter.api.Test;
 import padroescomportamentais.observer.exemplo2.DisplayTemperatura;
 import padroescomportamentais.observer.exemplo2.EstacaoMeteorologica;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class EstacaoMeterologicaTest {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EstacaoMeteorologica implements Subject {
-    private List<Observer> observadores;
+    private final List<Observer> observadores;
     private float temperatura;
 
     public EstacaoMeteorologica() {
