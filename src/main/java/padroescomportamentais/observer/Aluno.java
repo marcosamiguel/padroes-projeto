@@ -5,7 +5,7 @@ import java.util.Observer;
 
 public class Aluno implements Observer {
 
-    private String nome;
+    private final String nome;
     private String ultimaNotificacao;
 
     public Aluno(String nome) {

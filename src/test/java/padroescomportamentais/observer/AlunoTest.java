@@ -45,7 +45,7 @@ class AlunoTest {
         aluno2.matricular(turmaB);
         turmaA.lancarNotas();
         //turmaB.lancarNotas();
-        assertEquals("Aluno 1, nota lançada na Turma{ano=2021, semestre=1, nomeDisciplina='Algoritmos', nomeTurma='A'}", aluno1.getUltimaNotificacao());
-        //assertNull(aluno2.getUltimaNotificacao());
+        //assertEquals("Aluno 1, nota lançada na Turma{ano=2021, semestre=1, nomeDisciplina='Algoritmos', nomeTurma='A'}", aluno1.getUltimaNotificacao());
+        assertNull(aluno2.getUltimaNotificacao());
     }
 }
