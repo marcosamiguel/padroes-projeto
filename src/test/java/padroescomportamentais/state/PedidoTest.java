@@ -16,7 +16,6 @@ public class PedidoTest {
         pedido.avancar(); // Pedido está pronto para entrega.
         pedido.avancar(); // Pedido foi entregue.
         pedido.avancar(); // Pedido já foi entregue.
-
         pedido.cancelar(); // Pedido já foi entregue, não pode ser cancelado.
 
         assertNotNull(pedido);
