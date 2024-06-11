@@ -2,7 +2,7 @@ package padroescomportamentais.strategy.exemplo2;
 
 public class Produto {
     private String nome;
-    private double preco;
+        private double preco;
     private DescontoStrategy descontoStrategy;
 
     public Produto(String nome, double preco) {
